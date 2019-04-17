@@ -1,3 +1,6 @@
+###不错的教程
+[java concurrency](https://www.callicoder.com/java-concurrency-multithreading-basics/)
+
 ###try concurrency
     在这个文件中，我们希望可以两个方法可以同时进行
     
@@ -15,3 +18,9 @@
     当子线程运行耗时时，主线程会优先子线程结束，而有些时候，主线程需要用到子线程的数据，
     所以会等待子线程运行结束再运行主线程，会用join方法
    [join详解](https://www.jianshu.com/p/367fa66bf3f2)
+###优雅结束线程
+    1.在Thread的子类里面放一个private voliate boolean flag，再创建一个方法，
+    shutdown方法，可以置为flase的
+    2.在子类的while(true)中使用，if(Thread.interrupt()){break;}
+###强制中断线程
+    两个线程，执行线程作为子线程并设为守护线程，外部线程打断，也就会把子线程强制关闭
