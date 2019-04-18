@@ -24,3 +24,8 @@
     2.在子类的while(true)中使用，if(Thread.interrupt()){break;}
 ###强制中断线程
     两个线程，执行线程作为子线程并设为守护线程，外部线程打断，也就会把子线程强制关闭
+###synchronized 
+    1.让共享数据串性化去运行。
+###this,class锁
+    在编写sychronized方法时，会用到this锁
+    而在编写static静态方法时，会用到class锁
