@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cbf0cb9-a2c5-461d-8a71-cd55646a3ed9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter7/src/BankVersion3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter7/src/SynchronizedRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter7/src/SynchronizedStatic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter7/src/SynchronizedStaticTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter7/src/SynchronizedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter7/src/SynchronizedThis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -25,11 +23,12 @@
           <entry key="project.open.time.139" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.151" value="1" />
+          <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.96" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -37,17 +36,17 @@
           <entry key="Thread" value="1" />
           <entry key="class" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="49" />
-          <entry key="jpg" value="2" />
-          <entry key="md" value="13" />
+          <entry key="java" value="57" />
+          <entry key="jpg" value="3" />
+          <entry key="md" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="Image" value="2" />
-          <entry key="JAVA" value="49" />
-          <entry key="Markdown" value="13" />
+          <entry key="Image" value="3" />
+          <entry key="JAVA" value="57" />
+          <entry key="Markdown" value="14" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="UML" value="1" />
         </counts>
@@ -55,16 +54,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="java" value="6634" />
-          <entry key="md" value="1146" />
-          <entry key="txt" value="44" />
+          <entry key="java" value="7790" />
+          <entry key="md" value="1417" />
+          <entry key="txt" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6634" />
-          <entry key="Markdown" value="1146" />
-          <entry key="PLAIN_TEXT" value="46" />
+          <entry key="JAVA" value="7790" />
+          <entry key="Markdown" value="1417" />
+          <entry key="PLAIN_TEXT" value="57" />
         </counts>
       </usages-collector>
     </session>
@@ -73,27 +72,21 @@
     <favorites_list name="concurrency-project" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter7/src/SynchronizedStatic.java">
+        <entry file="file://$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="243">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter7/src/SynchronizedStaticTest.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-              <folding>
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1027">
+              <caret line="276" column="10" lean-forward="true" selection-start-line="276" selection-start-column="10" selection-end-line="276" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -102,10 +95,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="259">
-                <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+              <first_editor relative-caret-position="383">
+                <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -168,6 +170,9 @@
         <option value="$PROJECT_DIR$/chapter7/src/SynchronizedThis.java" />
         <option value="$PROJECT_DIR$/chapter7/src/SynchronizedStatic.java" />
         <option value="$PROJECT_DIR$/chapter7/src/SynchronizedStaticTest.java" />
+        <option value="$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion1.java" />
+        <option value="$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion2.java" />
+        <option value="$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion3.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -178,10 +183,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="125" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-68" />
+    <option name="y" value="-16" />
     <option name="width" value="1341" />
-    <option name="height" value="788" />
+    <option name="height" value="783" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -201,13 +207,7 @@
             <path>
               <item name="concurrency-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="concurrency-project" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="concurrency-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="concurrency-project" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="concurrency-project" type="b2602c69:ProjectViewProjectNode" />
@@ -217,15 +217,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555579976194" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555683151782" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -255,30 +255,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SynchronizedStaticTest">
-    <configuration name="BankVersion2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BankVersion2" />
-      <module name="chapter7" />
+  <component name="RunManager" selected="Application.ProducerConsumerVersion3">
+    <configuration name="ProducerConsumerVersion1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProducerConsumerVersion1" />
+      <module name="chapter8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankVersion3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BankVersion3" />
-      <module name="chapter7" />
+    <configuration name="ProducerConsumerVersion2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProducerConsumerVersion2" />
+      <module name="chapter8" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerConsumerVersion3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProducerConsumerVersion3" />
+      <module name="chapter8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="SynchronizedStaticTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SynchronizedStaticTest" />
-      <module name="chapter7" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SynchronizedTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SynchronizedTest" />
       <module name="chapter7" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -292,19 +292,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BankVersion2" />
-      <item itemvalue="Application.SynchronizedTest" />
-      <item itemvalue="Application.BankVersion3" />
       <item itemvalue="Application.SynchronizedThis" />
       <item itemvalue="Application.SynchronizedStaticTest" />
+      <item itemvalue="Application.ProducerConsumerVersion1" />
+      <item itemvalue="Application.ProducerConsumerVersion2" />
+      <item itemvalue="Application.ProducerConsumerVersion3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProducerConsumerVersion3" />
+        <item itemvalue="Application.ProducerConsumerVersion2" />
+        <item itemvalue="Application.ProducerConsumerVersion1" />
         <item itemvalue="Application.SynchronizedStaticTest" />
         <item itemvalue="Application.SynchronizedThis" />
-        <item itemvalue="Application.BankVersion3" />
-        <item itemvalue="Application.SynchronizedTest" />
-        <item itemvalue="Application.BankVersion2" />
       </list>
     </recent_temporary>
   </component>
@@ -324,7 +324,8 @@
       <workItem from="1555382666830" duration="5460000" />
       <workItem from="1555399352375" duration="7431000" />
       <workItem from="1555490343773" duration="9451000" />
-      <workItem from="1555554149817" duration="7500000" />
+      <workItem from="1555554149817" duration="8733000" />
+      <workItem from="1555663909017" duration="8297000" />
     </task>
     <task id="LOCAL-00001" summary="join and priority.">
       <created>1555406951226</created>
@@ -340,18 +341,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555508690856</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sychronized">
+      <created>1555581196410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555581196410</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43435000" />
+    <option name="totallyTimeSpent" value="52965000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="125" y="0" width="1341" height="788" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.71193415" visible="true" weight="0.27322406" />
-      <window_info id="Structure" order="1" sideWeight="0.28806585" side_tool="true" visible="true" weight="0.27322406" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.176259" visible="true" weight="0.26928896" />
+      <window_info id="Structure" order="1" sideWeight="0.823741" side_tool="true" visible="true" weight="0.26928896" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -359,8 +367,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.5009009" side_tool="true" weight="0.24205749" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.25688073" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5065574" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.08852459" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6058282" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -415,7 +423,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="join and priority." />
     <MESSAGE value="interrupt and synchronized" />
-    <option name="LAST_COMMIT_MESSAGE" value="interrupt and synchronized" />
+    <MESSAGE value="sychronized" />
+    <option name="LAST_COMMIT_MESSAGE" value="sychronized" />
   </component>
   <component name="editorHistoryManager">
     <entry file="uml://JAVA/java.lang.Thread">
@@ -512,9 +521,6 @@
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/life-cycle.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter3/src/CreateThread2.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -707,6 +713,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chapter7/src/SynchronizedStaticTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chapter7/src/SynchronizedStatic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -714,24 +727,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter7/src/SynchronizedStaticTest.java">
+    <entry file="file://$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/life-cycle.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter8/src/ProducerConsumerVersion2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding>
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-          </folding>
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1027">
+          <caret line="276" column="10" lean-forward="true" selection-start-line="276" selection-start-column="10" selection-end-line="276" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="259">
-            <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <first_editor relative-caret-position="383">
+            <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
