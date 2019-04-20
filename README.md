@@ -36,4 +36,13 @@
 ### 生产者消费者
     描述：案例
     多个摄像机拍摄地铁上的人，然后存储在memery里面，然后有很多机器分析数据，
-    生产者和消费者就是圆环，互相追赶
+    生产者和消费者就是圆环，互相追赶、
+### wait和sleep区别
+    1.wait是Object里面的方法，sleep是Thread的方法
+    2.sleep不会释放object monitor(Lock),但是wait会释放monitor并且加入到这个monitor的等待队列里面
+    3.sleep不需要依赖monitor，而wait需要
+    4.sleep不要被唤醒，而wait需要
+### 显示锁设计
+    1.需要有一个状态flag
+    2.currentThread
+    3.Collection来存储阻塞的线程
