@@ -9,6 +9,7 @@ import java.util.Collections;
 public class BooleanLock implements Lock {
     //the initvalue is false indicated the lock is free( other Thread can get this)
     private boolean initValue;
+    private Thread currentThread;
 
     private Collection<Thread>  blockedThreadCollections = new ArrayList<>();
 
@@ -21,18 +22,38 @@ public class BooleanLock implements Lock {
         System.out.println(Thread.currentThread().getName()+" get the lock");
         blockedThreadCollections.remove(Thread.currentThread());
         this.initValue = true;
+        this.currentThread = Thread.currentThread();
     }
 
     @Override
-    public void lock(long mills) throws InterruptedException, TimeOutException {
-
+    public synchronized void lock(long mills) throws InterruptedException, TimeOutException {
+        if(mills<=0){
+            lock();
+        }
+        long endTime = System.currentTimeMillis()+mills;
+        long hasRemaining = mills;
+        while(initValue){
+            System.out.println("CurrentThread"+Thread.currentThread().getName()+" has remaining "+hasRemaining);
+            if(hasRemaining <= 0){
+                throw new TimeOutException("Time out");
+            }
+            blockedThreadCollections.add(Thread.currentThread());
+            this.wait(hasRemaining);
+            hasRemaining = endTime - System.currentTimeMillis();
+        }
+        System.out.println(Thread.currentThread().getName()+" get the lock");
+        blockedThreadCollections.remove(Thread.currentThread());
+        this.initValue = true;
+        this.currentThread = Thread.currentThread();
     }
 
     @Override
     public synchronized void unlock() {
-        this.initValue = false;
-        System.out.println(Thread.currentThread().getName()+" release the Thread");
-        this.notifyAll();
+        if(currentThread==Thread.currentThread()) {
+            this.initValue = false;
+            System.out.println(Thread.currentThread().getName() + " release the Thread");
+            this.notifyAll();
+        }
     }
 
     @Override

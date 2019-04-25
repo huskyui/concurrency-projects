@@ -1,5 +1,4 @@
-
-
+import java.util.Date;
 
 /**
  * @author husky
@@ -27,6 +26,7 @@ public class ThreadInterrupt {
                 synchronized(MONITOR){
                     try {
                         MONITOR.wait(100);
+                        System.out.println(new Date());
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                         System.out.println(Thread.interrupted());
@@ -35,7 +35,7 @@ public class ThreadInterrupt {
             }
         });
         t.start();
-        Thread.sleep(100);
+        Thread.sleep(1_000);
         System.out.println(t.isInterrupted());
         t.interrupt();
         System.out.println(t.isInterrupted());

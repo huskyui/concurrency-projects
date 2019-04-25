@@ -1,19 +1,21 @@
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 /**
  * @author husky
- * @date 2019/4/20 17:58
+ * @date 2019/4/21 14:11
  */
-public class LockTest {
-
+public class LockTest2 {
     public static void main(String[] args) {
         BooleanLock lock = new BooleanLock();
         Stream.of("T1","T2","T3","T4","T5","T6").forEach(name->{
             new Thread(()->{
                 try {
-                    lock.lock();
+                    try {
+                        lock.lock(1000);
+                    } catch (Lock.TimeOutException e) {
+                        Optional.of(Thread.currentThread().getName()+" time out").ifPresent(System.out::println);
+                    }
                     work();
                     System.out.println(lock.getBlockedThread());
                 } catch (InterruptedException e) {
