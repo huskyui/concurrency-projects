@@ -21,6 +21,9 @@
     1.在Thread的子类里面放一个private voliate boolean flag，再创建一个方法，
     shutdown方法，可以置为flase的
     2.在子类的while(true)中使用，if(Thread.interrupt()){break;}
+    并不是正确的
+### interrupt
+    interrupt在线程中是一个
 ### 强制中断线程
     两个线程，执行线程作为子线程并设为守护线程，外部线程打断，也就会把子线程强制关闭
 ### synchronized 
@@ -62,3 +65,7 @@
     所有就会产生,如果多出的任务,应该怎么办,这里我们选择比较简单的把任务储存起来,BlockingQueue
     4.在addWorker时,其实会创建Worker,奥义就在这个run()方法里面,里面封装了一个
     runWorker()方法.会重复获取task并且运行它
+
+### 单例
+    1.由于是单例,所以不能不如构造函数给别人,所以是私有的
+    2.

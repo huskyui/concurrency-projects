@@ -29,16 +29,16 @@ public class ThreadInterrupt {
                         System.out.println(new Date());
                     } catch (InterruptedException e) {
                         e.printStackTrace();
-                        System.out.println(Thread.interrupted());
+                        System.out.println(Thread.interrupted()+""+new Date());
                     }
                 }
             }
         });
         t.start();
         Thread.sleep(1_000);
-        System.out.println(t.isInterrupted());
+        System.out.println(t.isInterrupted()+""+new Date());
         t.interrupt();
-        System.out.println(t.isInterrupted());
+        System.out.println(t.isInterrupted()+""+new Date());
     }
 
 }

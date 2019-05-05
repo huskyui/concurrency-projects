@@ -21,6 +21,20 @@ public class SimpleThreadPoolTest {
             });
             pool.submit(t1);
         }
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        try {
+            pool.shutdown();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        pool.submit(()->{
+//            System.out.println("new Task");
+//        });
+
 
 
     }
