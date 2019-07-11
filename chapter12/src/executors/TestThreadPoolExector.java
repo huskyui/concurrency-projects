@@ -41,7 +41,5 @@ public class TestThreadPoolExector {
         }finally {
             System.out.println("耗时: "+(System.currentTimeMillis()-currentTimeMills));
         }
-
-
     }
 }
