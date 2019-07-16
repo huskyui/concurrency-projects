@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * @author husky
  * @date 2019/7/11 11:39
  */
-public class CloseThreadByVoliate {
+public class CloseThreadByVolatile {
     static class WorkThread extends Thread{
         private volatile boolean flag = false;
         @Override

@@ -12,7 +12,7 @@ public class CloseThreadByInterruptStatus {
             @Override
             public void run() {
                 while(!isInterrupted()){
-
+                    //do something
                 }
             }
         };
